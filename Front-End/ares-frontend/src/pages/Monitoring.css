@@ -1,0 +1,250 @@
+  .monitoring_container {
+    background-color: #f1f5f9;
+    min-height: calc(100vh - 80px);
+    padding: 40px;
+    box-sizing: border-box;
+  }
+
+  .monitoring_wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .monitoring_status_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 12px; 
+    margin-bottom: 15px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  .status_info_left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .unit_id_text {
+    margin: 0;
+    color: #3182ce;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .mission_id_text, .zone_id_text {
+    font-size: 14px;
+    color: #718096;
+    font-weight: 500;
+  }
+
+  /* ─── 컨트롤 버튼 공통 ──────────────────────────────────── */
+.status_control_right {
+  display: flex;
+  align-items: center;
+  gap: 12px;          /* 버튼 사이 간격 */
+}
+
+.ctrl_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.18s ease, box-shadow 0.18s ease, transform 0.1s ease;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+.ctrl_btn:active { transform: scale(0.97); }
+.ctrl_btn svg   { flex-shrink: 0; }
+
+
+.ctrl_btn_pause {
+  background-color: #d97706;   /* amber-600 */
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.25);
+}
+.ctrl_btn_pause:hover {
+  background-color: #b45309;   /* amber-700 */
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35);
+}
+
+.ctrl_btn_terminate {
+  background-color: #dc2626;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.25);
+}
+.ctrl_btn_terminate:hover {
+  background-color: #b91c1c;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+}
+
+
+
+  .top_row {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 24px;
+  }
+
+  .bottom_row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  }
+
+
+  .video_main {
+    background-color: #2d3748;
+    border-radius: 20px;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .video_main.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    border-radius: 0;
+    background-color: #000;
+  }
+
+  .video_content {
+    color: #718096;
+    font-size: 18px;
+  }
+
+  .video_info_layer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 12px;
+  }
+
+  .video_bottom_layer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .timestamp { color: #a0aec0; font-size: 12px; }
+
+  .expand_btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .expand_btn:hover { background: rgba(255, 255, 255, 0.3); }
+
+  .exit_full_text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+
+  .section_label { color: #a0aec0; font-size: 10px; text-transform: uppercase; margin-bottom: 2px; }
+  .sensor_card { background: white; border-radius: 20px; padding: 24px; border: 1px solid #e2e8f0; }
+  .sensor_card>h3{
+    margin-bottom:20px;
+  }
+  .sensor_item { display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 14px; }
+
+  .progress_bar { width: 100%; height: 8px; background: #edf2f7; border-radius: 10px; margin-top: 6px; }
+  .progress_fill { height: 100%; background: #4a5568; border-radius: 10px; }
+
+ 
+
+  .status_grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+  .status_tag { display: flex; justify-content: space-between; background: #f8fafc; padding: 8px 12px; border-radius: 8px; font-size: 12px; }
+
+
+  .controller_box { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 10px; }
+  .key_row { display: flex; gap: 8px; }
+  .key { width: 40px; height: 40px; border: 1px solid #e2e8f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #4a5568; }
+
+
+.flex_between { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 20px; 
+}
+
+
+.flex_between > h4 {
+  margin-bottom: 0 !important; 
+  margin-top: 0;
+}
+
+.robot_status_header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+  .text_red { color: #e53e3e; }
+  .text_green { color: #38a169; }
+  .active_badge { background: #2f855a; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; }
+
+  .log_entry { padding: 10px; border-radius: 8px; background: #f8fafc; margin-bottom: 8px; }
+  .log_entry p { font-size: 12px; margin: 0; }
+  .log_entry span { font-size: 10px; color: #cbd5e0; display: block; text-align: right; }
+
+  .card>h4{
+    margin-bottom:20px;
+  }
+
+  .battery_section{
+    margin-bottom:30px;
+  }
+
+  .info_item{
+    margin-bottom:20px;
+  }

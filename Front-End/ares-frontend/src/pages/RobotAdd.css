@@ -1,0 +1,157 @@
+.robot_container {
+    padding: 40px 20px 100px 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #f1f5f9;
+}
+
+.robot_header{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.robot_header h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.robot_header p {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.robot_input_section {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.robot_form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.robot_label {
+    width: 100%;          
+    font-size: 14px;
+    font-weight: 700;
+    color: #475569;
+    margin-bottom: -5px; 
+}
+
+.robot_input {
+    flex: 1;           
+    height: 48px;         
+    padding: 0 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.robot_add_btn {
+    padding: 0 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    height: 48px;
+    box-sizing: border-box; 
+    display: flex;      
+    align-items: center;
+}
+
+.robot_add_btn:hover {
+    background: #0056b3;
+}
+
+.robot_list_section{
+    max-width: 1000px;
+    margin : 0 auto;
+    margin-top: 35px;
+}
+
+.robot_list_section h3{
+    margin-bottom: 20px;
+}
+
+.robot_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.robot_card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    position: relative;
+}
+
+.robot_card_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.status_indicator {
+    font-size: 12px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+.status_indicator.online {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status_indicator.offline {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.robot_key_display {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.robot_info p {
+    font-size: 13px;
+    color: #64748b;
+    margin: 5px 0;
+}
+
+.robot_actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.remove_btn {
+    flex: 1;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #e2e8f0;
+}
+
+.remove_btn:hover { background: #fee2e2; color: #ef4444; border-color: #fecaca; }

@@ -1,0 +1,111 @@
+
+.signup_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f1f5f9; 
+  font-family: 'Pretendard', -apple-system, sans-serif;
+}
+
+
+.signup_card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.signup_title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.signup_card p {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 32px;
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+  text-align: left; 
+  margin-bottom: 20px;
+}
+
+.input_group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 6px;
+  margin-left: 4px;
+}
+
+.id_input, 
+.pw_input, 
+.name_input,
+.phone_input,  
+.signup_select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  background-color: white;
+  color: #1e293b;
+}
+
+.id_input:focus, 
+.pw_input:focus, 
+.name_input:focus, 
+.phone_input:focus, 
+.signup_select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.signup_select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 14px;
+}
+
+.signup_btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #1e293b; 
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.signup_btn:hover {
+  background-color: #334155 ;
+}
+
+.signup_btn:active {
+  transform: scale(0.98);
+}
+.error_msg {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+}

@@ -1,0 +1,62 @@
+/* 푸터 전체 컨테이너 */
+.footer-container {
+  background-color: #222222;
+  color: #a0aec0;
+  padding: 60px 80px 40px 80px;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px; /* 섹션 간 간격 */
+  position: relative;
+}
+
+
+.brand-logo  {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.footer-section h4 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* 기술 스택 섹션은 가로로 두 줄로 배치될 수 있게 설정 */
+.tech-stack-lists {
+  display: flex;
+  gap: 60px;
+}
+
+/* 하단 저작권 영역 */
+.footer-bottom {
+  max-width: 1400px;
+  margin: 60px auto 0 auto;
+  text-align: right;
+  border-top: 1px solid #333333;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #718096;
+  margin: 2px 0;
+}

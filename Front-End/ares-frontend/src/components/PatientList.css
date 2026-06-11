@@ -1,0 +1,68 @@
+.patientList_container{
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+}
+.filter_group{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+    padding: 15px ;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f5f9;
+    border-radius: 25px;
+}
+.filter_group button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #e2e8f0;
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.filter_group button.btn_active{
+    background-color : #2563eb;
+    color: white;
+    border-color : #2563eb;
+    box-shadow: 0 4px 10px rgba(37,99,235,0.2);
+}
+.cards_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.patient_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px;
+    background:white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #f1f5f9;
+}
+.info h3{
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #1e293b;
+}
+.info p{
+    margin: 0;
+    font-size: 14px;
+    color: #64748b;
+}
+.badge {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+.badge.위급 { background-color: #ef4444; }
+.badge.주의 { background-color: #f59e0b; }
+.badge.양호 { background-color: #10b981; }

@@ -1,0 +1,53 @@
+spring:
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.H2Dialect
+
+mqtt:
+  broker-url: tcp://localhost:1883
+  client-id: hexapod-spring-server
+  username:
+  password:
+  topics:
+    sensor: hexapod/+/sensors
+    alert:  hexapod/+/alert
+    status: hexapod/+/status
+
+mock:
+  enabled: false
+  robot-id: robot-01
+  robot-name: "Ares-1"
+  interval-ms: 1000
+  survivor-rate: 0.05
+
+logging:
+  level:
+    com.hexapod: INFO
+
+jwt:
+  secret: hexapod-secret-key-must-be-at-least-256-bits-long-for-hs256asdfasdfasdfasdfadsfasdfasdfasdf
+  expiration-ms: 86400000   # 24시간
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+    jpa:
+      hibernate:
+        ddl-auto: create
+      database-platform: org.hibernate.dialect.H2Dialect

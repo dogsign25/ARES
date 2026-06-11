@@ -1,0 +1,46 @@
+# ──────────────────────────────────────────
+# IDE
+# ──────────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# ──────────────────────────────────────────
+# Spring Boot / Gradle (ares-server)
+# ──────────────────────────────────────────
+ares-server/.gradle/
+ares-server/build/
+ares-server/out/
+ares-server/bin/
+!ares-server/gradle/wrapper/gradle-wrapper.jar
+HELP.md
+
+# ──────────────────────────────────────────
+# Node / React (hexapod-client)
+# ──────────────────────────────────────────
+hexapod-client/node_modules/
+hexapod-client/dist/
+hexapod-client/.env
+hexapod-client/.env.local
+hexapod-client/.env.*.local
+
+# ──────────────────────────────────────────
+# 환경 설정 / 시크릿
+# ──────────────────────────────────────────
+application-local.yml
+application-prod.yml
+*.env
+
+# ──────────────────────────────────────────
+# OS
+# ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ──────────────────────────────────────────
+# 로그
+# ──────────────────────────────────────────
+*.log
+logs/
